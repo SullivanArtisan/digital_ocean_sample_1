@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Travel List</title>
+	<title>Travel List 2</title>
 </head>
 
 <body>
