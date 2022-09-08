@@ -30,6 +30,10 @@ Route::get('/', function () {
 });
 
 
+Route::get('page_2', function () {
+  return view('page_2');
+});
+
 Route::get('manu', [ManuController::class, 'create_data']);
 
 Route::get('product', [ProductController::class, 'index']);
