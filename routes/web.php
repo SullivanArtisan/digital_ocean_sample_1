@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ManuController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,14 @@ Route::get('/', function () {
 
   return view('travel_list', ['visited' => $visited, 'togo' => $togo ] );
 });
+
+
+Route::get('manu', [ManuController::class, 'create_data']);
+
+Route::get('product', [ProductController::class, 'index']);
+
+Route::get('product_detail', [ManuController::class, 'select_data']);
+
+Route::get('update_data', [ManuController::class, 'update_data']);
+
+Route::get('delete_data', [ManuController::class, 'delete_data']);
