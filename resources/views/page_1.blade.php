@@ -5,7 +5,7 @@
 
 <body>
 	<h1>This is page 1</h1>
-	<button class="btn"><a href="{{ route('page_2') }}">To Page 2</a></button>
+    <button  onclick="window.location='{{ route("page_2") }}'">To Page 2</button>
 </body>
 </html>
 
