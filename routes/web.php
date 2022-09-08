@@ -30,7 +30,7 @@ Route::get('/', function () {
 
 Route::get('pagetwo', function () {
   return view('page_2');
-});
+})->name('pagetwo');
 
 Route::get('manu', [ManuController::class, 'create_data']);
 
