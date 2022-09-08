@@ -30,7 +30,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/page_2', function () {
+Route::view('/page_2', function () {
   return view('page_2');
 });
 
