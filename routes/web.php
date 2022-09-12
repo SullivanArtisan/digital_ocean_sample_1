@@ -34,6 +34,10 @@ Route::get('page_2C/{id}/notes/{note_contents}', function ($id, $note_contents) 
   return ("page_2C; ID=$id, Notes=$note_contents");
 });
 
+Route::get('/page_2D/{id}', function ($id) {
+  return ("page_2D; ID=$id");
+})->where('id', '[0-9]+');
+
 Route::get('page_2', function () {
   return view('page_2');
 })->name('page_2');
