@@ -28,7 +28,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/page_2B', function () {
+Route::get('page_2B', function () {
   return view('page_2B');
 });
 
